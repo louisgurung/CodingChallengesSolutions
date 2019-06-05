@@ -1,0 +1,61 @@
+//QUESTION[1]:: Find longest sensible word in the given string       Input: "letter letter!& house" Output: "letter"
+
+function LongestWord(sen) { 
+
+  var array = sen.split(" ");
+
+  var long = array[0];
+
+  for (var i = 0; i < array.length; i++){
+
+      if (array[i].length>long.length)
+
+      long = array[i];
+  }
+
+  return long; 
+
+}
+
+//function call
+LongestWord(readline());
+
+//QUESTION[2]:: Reverse the given string     Input: "Argument goes here" Output: ereh seog tnemugrA
+
+function FirstReverse(str) {
+
+  var len = str.length;
+
+  var result = "";
+
+  for(var i = len-1;i>=0;i--){
+
+      result+=str.charAt(i);
+  }
+
+  return result; 
+
+}
+
+//function call
+FirstReverse(readline());
+
+//QUESTION[3]:: Find the factorial of given number         Input: 8  Output: 40320
+
+function FirstFactorial(num) { 
+
+  var a = Math.floor(num);
+
+  var product=1;
+
+  for(var i = 1;i<=a;i++)
+  {
+      product *= i;
+  }
+
+  return product; 
+
+}
+
+//function call
+FirstFactorial(readline());
